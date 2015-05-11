@@ -104,11 +104,12 @@ hr {
     a {
       color: $dark;
       text-decoration: none;
-      margin: 0 .85rem;
+      padding: .5em .85rem;
       font-size: .9rem;
       text-transform: uppercase;
       &:hover {
-        color: $highlight;
+        color: $white;
+        background: $highlight;
       }
     }
   }
