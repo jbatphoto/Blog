@@ -1,0 +1,26 @@
+<div class="wrapper wrapper_padding clearfix">
+    <div class="col-1 about homepage_content">
+      <h2>About</h2>
+      <hr />
+      <p>An Okie from Muskogee who now calls Edmond home. I work full time as a Web Designer and Front-End Developer for LifeChurch.tv. I have been building websites for the past 5 years and love every minute of it. Passionate about Jesus and his Church, husband to my beautiful bride, Brea, father to, Tenley-Kate and Callaway, and a sucker for a good cup of coffee. Be blessed!</p>
+      <!-- <p><img src="https://avatars1.githubusercontent.com/u/5542815?v=3&s=460" class="profile_img" /></p> -->
+    </div>
+    <div class="col-2 homepage_content">
+      <h2>Stuff I've Written</h2>
+      <hr />
+      <% @posts.each do |post| %>
+            <h3><a href="#"><%= link_to post.title, post %></a></h3>
+            <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+      <% end %>
+    </div>
+    <div class="col-3 homepage_content">
+      <h2>Stuff I've Built</h2>
+      <hr />
+      <h3><a href="#">This</a></h3>
+      <p class="date">Friday, April 10</p>
+        <h3><a href="#">This 2</a></h3>
+      <p class="date">Friday, April 08</p>
+        <h3><a href="#">This 3</a></h3>
+      <p class="date">Friday, April 01</p>
+    </div>
+  </div>
