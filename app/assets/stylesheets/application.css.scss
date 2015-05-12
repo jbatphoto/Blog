@@ -14,6 +14,15 @@ body, html {
   font-family: 'Raleway', sans-serif;
 }
 
+a:link {
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 90%;
@@ -84,16 +93,17 @@ hr {
 #main_navigation {
   padding: 2.5em 5%;
   border-bottom: 1px solid $border;
+  background: $dark;
   .name {
     font-weight: 700;
     font-size: .8em;
     text-transform: uppercase;
-    border: 2px solid $border;
+    border: 2px solid $highlight;
     padding: 1rem;
     text-decoration: none;
-    color: $dark;
+    color: $white;
     float: left;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     &:hover {
       color: $highlight;
     }
@@ -102,14 +112,16 @@ hr {
     float: right;
     padding-top: 1rem;
     a {
-      color: $dark;
+      color: $white;
       text-decoration: none;
-      padding: .5em .85rem;
-      font-size: .9rem;
+      padding: .75em .85rem;
+      font-size: .75rem;
       text-transform: uppercase;
+      letter-spacing: 2px;
       &:hover {
         color: $white;
         background: $highlight;
+        border-radius: 10px;
       }
     }
   }
