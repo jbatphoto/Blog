@@ -105,7 +105,9 @@ hr {
     float: left;
     letter-spacing: 6px;
     &:hover {
-      color: $highlight;
+      background: $white;
+      border: 2px solid $white;
+      color: $dark;
     }
   }
   nav {
