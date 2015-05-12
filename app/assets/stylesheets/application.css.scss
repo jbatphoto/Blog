@@ -117,7 +117,8 @@ hr {
       padding: .75em .85rem;
       font-size: .75rem;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
+      font-weight: 600;
       &:hover {
         color: $white;
         background: $highlight;
