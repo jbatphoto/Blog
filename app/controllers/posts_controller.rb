@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
     before_action :find_post, only: [:show, :edit, :update, :destroy]
+    http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
 
     def index
       @posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 5)
@@ -13,9 +14,9 @@ class PostsController < ApplicationController
         @post = Post.new post_params
 
         if @post.save
-            redirect_to @post, notice: "Hellz yeah, Mackenzie! Your article was successfully saved!"
+            redirect_to @post, notice: "Nice post, Justin! Your article was successfully saved!"
         else
-            render 'new', notice: "Oh no, Mackenzie! I was unable to save your post."
+            render 'new', notice: "Oh no, Justin! I was unable to save your post."
         end
     end
 

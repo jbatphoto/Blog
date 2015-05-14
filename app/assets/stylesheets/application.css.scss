@@ -99,7 +99,7 @@ hr {
     font-size: .8em;
     text-transform: uppercase;
     border: 2px solid $highlight;
-    padding: 1rem;
+    padding: .75rem 1rem;
     text-decoration: none;
     color: $white;
     float: left;
@@ -112,7 +112,7 @@ hr {
   }
   nav {
     float: right;
-    padding-top: 1rem;
+    padding-top: .75rem;
     a {
       color: $white;
       text-decoration: none;
