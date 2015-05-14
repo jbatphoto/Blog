@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
     before_action :find_post, only: [:show, :edit, :update, :destroy]
-    http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+    http_basic_authenticate_with name: "justin", password: "olevia1", except: [:index, :show]
 
     def index
       @posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 5)
