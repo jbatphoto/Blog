@@ -7,12 +7,18 @@
 
     <div id="content">
         <%= simple_format @project.description %>
-        <%= link_to "Edit", edit_post_path, class: "button" %>
     </div>
     <hr>
 
 <div class="button_wrapper">
             <a href="<%= @project.link %>" class="project-button" target="_blank">Visit <%= @project.title %></a>
         </div>
+  
+  <hr>
+  
+  <%= link_to "Edit", edit_project_path(@project), class: "button" %>
+    <%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure?" }, class: "button" %>
+
+    <hr>
 
 </div>
