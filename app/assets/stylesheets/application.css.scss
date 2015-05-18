@@ -99,7 +99,7 @@ hr {
     font-size: .8em;
     text-transform: uppercase;
     border: 2px solid $highlight;
-    padding: .75rem 1rem;
+    padding: 1rem 1.25rem;
     text-decoration: none;
     color: $white;
     float: left;
@@ -182,6 +182,21 @@ input[type="submit"], .button {
   &:hover {
     border: 2px solid $highlight;
     color: $highlight;
+  }
+}
+
+.project-button {
+  background: $dark;
+  color: $white;
+  text-decoration: none;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  margin: auto;
+  display: table;
+  &:hover {
+    background: $highlight;
+    color: $dark;
   }
 }
 
