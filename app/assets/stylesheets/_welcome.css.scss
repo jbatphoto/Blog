@@ -20,8 +20,9 @@
 
 .homepage_content {
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.35rem;
     text-transform: uppercase;
+    font-weight: 400;
   }
   hr {
     width: 3em;
@@ -50,6 +51,8 @@
   }
   p {
     margin: 0 0 .75em 0;
+    font-weight: 300;
+    line-height: 1.5em;
   }
 }
 

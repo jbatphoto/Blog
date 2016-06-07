@@ -5,13 +5,14 @@ $light: #9a9da4;
 $highlight: #8bc6db;
 $border: #e9e9e9;
 $white: #ffffff;
+$gray: #eee;
 
 * {
   box-sizing: border-box;
 }
 
 body, html {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 a:link {
@@ -95,8 +96,8 @@ hr {
   border-bottom: 1px solid $border;
   background: $dark;
   .name {
-    font-weight: 700;
-    font-size: .8em;
+    font-weight: 400;
+    font-size: 1em;
     text-transform: uppercase;
     border: 2px solid $highlight;
     padding: 1rem 1.25rem;
@@ -120,11 +121,10 @@ hr {
       font-size: .75rem;
       text-transform: uppercase;
       letter-spacing: 3px;
-      font-weight: 600;
+      font-weight: 300;
       &:hover {
         color: $white;
-        background: $highlight;
-        border-radius: 10px;
+        border: 2px solid $highlight;
       }
     }
   }
@@ -139,8 +139,8 @@ hr {
 }
 
 #main_footer {
-  padding: 2.5em 5%;
-  border-top: 1px solid $border;
+  padding: 1.5em 5% 2.5em;
+  background: $gray;
   .copyright {
     float: left;
     font-size: 0.9em;
