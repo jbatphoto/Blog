@@ -13,6 +13,9 @@ hr {
   border: 0;
   border-top: 2px solid $highlight;
   margin: 1rem 0 2rem;
+  @media screen and (max-width: 39.9375em) {
+    margin: 1rem auto 2rem;
+  }
 }
 h3 {
   font-size: 1.25em;

@@ -9,12 +9,11 @@ header {
   h1 {
     font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
+    @media screen and (max-width: 39.9375em) {
+      font-size: 2rem;
+    }
   }
 }
-
-hr {
-    margin: 1rem auto 2rem;
-  }
 
 // -- Pagination --
 

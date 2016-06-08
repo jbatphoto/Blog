@@ -1,24 +1,24 @@
-<div id="post_show_content" class="skinny_wrapper wrapper_padding">
-    <header>
-        <p class="date"><%= @project.created_at.strftime('%A, %B %d') %></p>
+<div class="padded">
+  <header>
+    <div class="row">
+      <div class="large-12 columns">
         <h1><%= @project.title %></h1>
+        <p class="date"><a href="<%= @project.link %>" target="_blank">View Project</a></p>
         <hr>
-    </header>
-
-    <div id="content">
-        <%= simple_format @project.description %>
+      </div>
     </div>
-    <hr>
-
-<div class="button_wrapper">
-            <a href="<%= @project.link %>" class="project-button" target="_blank">View Project</a>
-        </div>
+  </header>
   
+  <div class="row">
+    <div class="large-8 large-offset-2 columns">
+      <div id="content">
+        <%= simple_format @project.description %>
+        <%= link_to "Edit", edit_project_path, class: "button" %>
+      </div>
+    </div>
+  </div>
+
   <hr>
-  
-  <%= link_to "Edit", edit_project_path(@project), class: "button" %>
-    <%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure?" }, class: "button" %>
-
-    <hr>
 
 </div>
+

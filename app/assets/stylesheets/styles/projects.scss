@@ -1,32 +1,26 @@
-// Place all the styles related to the projects controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-#posts_wrapper {
-  padding: 3em 0;
-  .post {
-    text-align: center;
-    .date {
-      font-size: .9em;
-      margin: 0;
+header {
+  text-align: center;
+  .date {
+    margin: 0 auto;
+    color: $light;
+    font-size: 0.9em;
+    font-weight: 400;
+    a {
       color: $light;
-    }
-    h2 {
-      margin: 0;
-      font-size: 2em;
-      text-transform: uppercase;
-      color: $dark;
-      a {
-        text-decoration: none;
-        color: inherit;
-        &:hover {
-          color: $highlight;
-        }
+      &:hover {
+        color: $highlight;
       }
     }
-    hr {
-      margin: 3em auto;
+  }
+  h1 {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    @media screen and (max-width: 39.9375em) {
+      font-size: 2rem;
     }
+  }
+  hr {
+    margin: 1rem auto 2rem;
   }
 }
 
@@ -73,32 +67,40 @@
   }
 }
 
-#post_show_content {
-    header {
-        text-align: center;
-        .date {
-            font-size: .9em;
-            color: $light;
-            margin: 0;
-        }
-        h1 {
-            margin: 0;
-        }
+.post {
+  border: 1px solid $gray;
+  padding: 1em;
+  margin-bottom: 1em;
+  h2 {
+    color: $dark;
+    text-align: center;
+    a {
+      color: $dark;
     }
-    hr {
-        margin: 3em auto;
-    }
+  }
+  .date {
+    text-align: center;
+  }
+  a {
+    color: $highlight;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  hr {
+    margin: 1rem auto 2rem;
+  }
 }
 
-#share_box {
+.share_box {
     text-align: center;
     p {
         padding: 0 0 1em 0;
         margin: 0;
-        font-weight: 700;
+        font-weight: 400;
         text-transform: uppercase;
         color: $dark;
-        font-size: .8em;
+        font-size: 1em;
     }
     i {
         color: $dark;
