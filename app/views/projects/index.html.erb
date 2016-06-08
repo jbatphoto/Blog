@@ -12,6 +12,7 @@
     <% @projects.each do |project| %>
     <div class="large-4 medium-4 small-12 columns">
       <div class="post">
+        <%= image_tag attachment_url(@project, :project_image, :fill, 300, 100, format: "jpg") %>
         <h2><a href="#"><%= link_to project.title, project %></a></h2>
         <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
         <hr />

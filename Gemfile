@@ -9,6 +9,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'will_paginate', '~> 3.0.7'
 gem 'foundation-rails'
+gem "refile", require: "refile/rails"
+gem "refile-mini_magick"
 
 gem 'jquery-rails'
 gem 'turbolinks'
