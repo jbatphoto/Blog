@@ -1,11 +1,6 @@
 @import 'normalize';
-
-$dark: #424652;
-$light: #9a9da4;
-$highlight: #8bc6db;
-$border: #e9e9e9;
-$white: #ffffff;
-$gray: #eee;
+@import "foundation_and_overrides";
+@import 'base/variables.scss';
 
 * {
   box-sizing: border-box;
@@ -24,19 +19,8 @@ a:link {
   transition:.5s;
 }
 
-.wrapper {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.skinny_wrapper {
-  width: 80%;
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.wrapper_padding {
-  padding: 4rem 0;
+.padded {
+  padding: 4em 0;
 }
 
 .clearfix:before,
@@ -92,7 +76,7 @@ hr {
   }
 
 #main_navigation {
-  padding: 2.5em 5%;
+  padding: 2.5em 0;
   border-bottom: 1px solid $border;
   background: $dark;
   .name {
@@ -200,5 +184,5 @@ input[type="submit"], .button {
   }
 }
 
-@import 'welcome';
-@import 'post_project';
+@import 'styles/welcome.scss';
+@import 'styles/projects.scss';
