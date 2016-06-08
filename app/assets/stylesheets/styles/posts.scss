@@ -59,21 +59,25 @@ hr {
   }
 }
 
-#post_show_content {
-    header {
-        text-align: center;
-        .date {
-            font-size: .9em;
-            color: $light;
-            margin: 0;
-        }
-        h1 {
-            margin: 0;
-        }
+.post {
+  border: 1px solid $light;
+  padding: 1em;
+  h2 {
+    color: $dark;
+    text-align: center;
+    a {
+      color: $dark;
     }
-    hr {
-        margin: 3em auto;
-    }
+  }
+  .date {
+    text-align: center;
+  }
+  a {
+    color: $highlight;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 .share_box {
