@@ -89,6 +89,10 @@ hr {
     color: $white;
     float: left;
     letter-spacing: 6px;
+    @media screen and (max-width: 39.9375em) {
+      float: none;
+      margin: auto;
+    }
     &:hover {
       background: $white;
       border: 2px solid $white;
@@ -98,6 +102,10 @@ hr {
   nav {
     float: right;
     padding-top: .75rem;
+    @media screen and (max-width: 39.9375em) {
+      float: none;
+      margin: 1em auto 0;
+    }
     a {
       color: $white;
       text-decoration: none;

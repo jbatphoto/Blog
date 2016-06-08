@@ -2,6 +2,9 @@ h2 {
   font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: 600;
+  @media screen and (max-width: 39.9375em) {
+    text-align: center;
+  }
 }
 hr {
   width: 3em;
