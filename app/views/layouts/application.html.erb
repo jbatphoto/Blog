@@ -9,27 +9,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
-  <header id="main_navigation" class="clearfix">
-    <%= link_to "Justin Battenfield", root_path, class: "name" %>
-    <nav>
-      <%= link_to "Articles", posts_path %>
-      <%= link_to "Projects", projects_path %>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
+  <%= render "shared/header" %>
     <%= yield %>
-  
-   <footer id="main_footer">
-    <p class="copyright">&copy; 2016 Justin Battenfield</p>
-    <nav>
-      <a href="https://twitter.com/jbatphoto" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="https://github.com/jbatphoto" target="_blank"><i class="fa fa-github"></i></a>
-      <a href="https://instagram.com/jbatphoto/" target="_blank"><i class="fa fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/profile/view?id=262021520" target="_blank"><i class="fa fa-linkedin"></i></a>
-    </nav>
-  </footer>
-
+  <%= render "shared/footer" %>
 </body>
 </html>
