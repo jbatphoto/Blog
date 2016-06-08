@@ -60,8 +60,9 @@ hr {
 }
 
 .post {
-  border: 1px solid $light;
+  border: 1px solid $gray;
   padding: 1em;
+  margin-bottom: 1em;
   h2 {
     color: $dark;
     text-align: center;
